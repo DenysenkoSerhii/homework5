@@ -59,7 +59,9 @@
       <!--Герой -->
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button primary">Заказать услугу</button>
+        <button type="button" class="button primary modal-btn" data-modal-open>
+          Заказать услугу
+        </button>
       </section>
       <!-- Преимущества -->
       <section class="benefits-section section">
@@ -125,6 +127,7 @@
                   alt="Картинка с клавиатурой и планшетом"
                   width="370"
               /></a>
+              <p class="works-text">Десктопные приложения</p>
             </li>
             <li class="works-card">
               <a href="">
@@ -133,11 +136,13 @@
                   alt="Картинка с смартфоном и ноутбуком"
                   width="370"
               /></a>
+              <p class="works-text">Мобильные приложения</p>
             </li>
             <li class="works-card">
               <a href="">
                 <img src="./img/tablet.jpg" alt="Картинка с планшетом" width="370" />
               </a>
+              <p class="works-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -407,6 +412,17 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-btn-icon" width="18" height="18">
+            <use href="./img/sprite.svg#close-back"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
 <!-- Все -->
